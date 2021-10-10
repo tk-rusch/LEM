@@ -1,3 +1,5 @@
+<h1 align='center'> Long Expressive Memory for Sequence Modeling </h1>
+
 This repository contains the implementation to reproduce the numerical experiments 
 of the preprint **Long Expressive Memory for Sequence Modeling**
 

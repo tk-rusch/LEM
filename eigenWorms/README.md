@@ -5,7 +5,7 @@ test and validation sets through *data.py*.
 
 If you don't want to use our automated data pipeline, 
 you can download the zip file here: http://www.timeseriesclassification.com/Downloads/EigenWorms.zip
-and process the *.arff* files in the downlaoded and unzipped folder.
+and process the *.arff* files in the downloaded and unzipped folder.
 
 ## Usage
 To start the training with LEM, simply run:

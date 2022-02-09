@@ -93,8 +93,6 @@ class LEMcuda(torch.nn.Module):
 class LEM(torch.nn.Module):
     def __init__(self, ninp, nhid, nout, dt=1.):
         super(LEM, self).__init__()
-        self.ninp = ninp
-        self.nhid = nhid
         self.rnn = LEMcuda(ninp,nhid,dt)
         self.classifier = nn.Linear(nhid,nout)
 

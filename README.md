@@ -9,7 +9,7 @@ paper [Long Expressive Memory for Sequence Modeling](https://openreview.net/foru
 
 # Update</h1> 
 A fast mixed C++/CUDA PyTorch extension implementation of LEM is 
-now available (**3-5 times faster** than LEM using standard PyTorch on GPUs).
+now available (**3-5 times faster** than LEM using standard PyTorch+cuda on GPUs).
 
 It's as easy to use as PyTorch's `nn.LSTM` or `nn.GRU`.
 

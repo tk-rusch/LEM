@@ -33,7 +33,7 @@ If it still doesn't work, please feel free to open an issue.
 # Usage
 Once compiled, it can be used in standard PyTorch by defining the compiled extensions as:
 
-```
+```python
 import math
 import torch
 from torch import nn
@@ -89,7 +89,7 @@ class LEMcuda(torch.nn.Module):
 
 `LEMcuda` can now be used like `nn.LSTM` or `nn.GRU`, e.g.
 
-```
+```python
 class LEM(torch.nn.Module):
     def __init__(self, ninp, nhid, nout, dt=1.):
         super(LEM, self).__init__()

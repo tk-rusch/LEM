@@ -1,5 +1,5 @@
 <h1 align='center'> Long Expressive Memory for Sequence Modeling<br>
-    <span style="color:blue"> ICLR 2022 Spotlight </span> </h1>
+    *ICLR 2022 Spotlight* </h1>
 
 
 This repository contains the implementation to reproduce the numerical experiments 
@@ -7,7 +7,7 @@ of the *ICLR 2022* **[spotlight]**
 paper [Long Expressive Memory for Sequence Modeling](https://openreview.net/forum?id=vwj6aUeocyf)
 
 
-## <span style="color:red"> Update </span> </h1> 
+# Update</h1> 
 A fast mixed C++/CUDA PyTorch extension implementation of LEM is 
 now available (**3-5 times faster** than LEM using standard PyTorch on GPUs).
 
@@ -20,9 +20,9 @@ If you are planning on using LEM for your own project, I very much recommend to 
 fast extension (in `LEM_cuda`)
 instead of the standard PyTorch code we provide in `src`. 
 
-## Running the experiments
+# Running the experiments
 
-### Requirements
+## Requirements
 You can install the requirements using *python 3.7* with
 ```
 conda create --name lem python=3.7
@@ -31,7 +31,7 @@ conda activate lem
 pip install -r requirements.txt
 ```
 
-### Experiments
+## Experiments
 
 This repository contains the codes to reproduce the results 
 of the following experiments for the proposed LEM:
@@ -56,7 +56,7 @@ please follow the steps explained in the *README* of the PTB directory.
 
 
 
-## Citation
+# Citation
 If you found our work useful, please consider citing our paper at:
 ```bibtex
 @inproceedings{rusch2022lem,

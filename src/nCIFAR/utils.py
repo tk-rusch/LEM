@@ -3,12 +3,12 @@ import torchvision
 import torchvision.transforms as transforms
 
 def get_data(bs_train,bs_test):
-    train_dataset = torchvision.datasets.CIFAR10(root='data/',
+    train_dataset = torchvision.datasets.CIFAR10(root='../../data/cifar10/',
                                                  train=True,
                                                  transform=transforms.ToTensor(),
                                                  download=True)
 
-    test_dataset = torchvision.datasets.CIFAR10(root='data/',
+    test_dataset = torchvision.datasets.CIFAR10(root='../../data/cifar10/',
                                                 train=False,
                                                 transform=transforms.ToTensor())
 

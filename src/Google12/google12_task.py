@@ -43,17 +43,17 @@ np.random.seed(args.seed)
 model = network.LEM(ninp,args.nhid,nout,drop=args.drop).to(args.device)
 
 cwd = os.getcwd()
-train_dataset = GCommandLoader(cwd+'/data/processed/train', window_size=.02)
+train_dataset = GCommandLoader(cwd+'/../../data/google_speech_command/processed/train', window_size=.02)
 train_loader = torch.utils.data.DataLoader(
     train_dataset, batch_size=args.batch, shuffle=True,
     num_workers=12, pin_memory='cpu', sampler=None)
 
-valid_dataset = GCommandLoader(cwd+'/data/processed/valid', window_size=.02)
+valid_dataset = GCommandLoader(cwd+'/../../data/google_speech_command/processed/valid', window_size=.02)
 valid_loader = torch.utils.data.DataLoader(
     valid_dataset, batch_size=args.batch, shuffle=None,
     num_workers=12, pin_memory='cpu', sampler=None)
 
-test_dataset = GCommandLoader(cwd+'/data/processed/test', window_size=.02)
+test_dataset = GCommandLoader(cwd+'/../../data/google_speech_command/processed/test', window_size=.02)
 test_loader = torch.utils.data.DataLoader(
     test_dataset, batch_size=args.batch, shuffle=None,
     num_workers=12, pin_memory='cpu', sampler=None)

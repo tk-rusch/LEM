@@ -556,7 +556,7 @@ def process_data(raw_data_dir, processed_data_dir):
     torch.save(valid_dataset, processed_data_dir + '/validation.pt')
 
 def heart_rate():
-    data_dir = os.getcwd()  + '/data'
+    data_dir = os.getcwd()  + '/../../data/heart_rate'
     if not os.path.isdir(data_dir):
         os.mkdir(data_dir)
 

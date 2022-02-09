@@ -58,7 +58,7 @@ def make_dataset(gcommands_fold, out_path):
 
 
 def google12_v2():
-    data_dir = os.getcwd()  + '/data'
+    data_dir = os.getcwd()  + '/../../data/google_speech_command'
     if not os.path.isdir(data_dir):
         os.mkdir(data_dir)
 

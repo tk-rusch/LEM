@@ -1,17 +1,37 @@
-<h1 align='center'> Long Expressive Memory for Sequence Modeling </h1>
+<h1 align='center'> Long Expressive Memory for Sequence Modeling<br>
+    <span style="color:blue"> ICLR 2022 Spotlight </span> </h1>
+
 
 This repository contains the implementation to reproduce the numerical experiments 
-of the paper [Long Expressive Memory for Sequence Modeling](https://arxiv.org/abs/2110.04744)
+of the *ICLR 2022* **[spotlight]** 
+paper [Long Expressive Memory for Sequence Modeling](https://openreview.net/forum?id=vwj6aUeocyf)
 
 
+## <span style="color:red"> Update </span> </h1> 
+A fast mixed C++/CUDA PyTorch extension implementation of LEM is 
+now available (**3-5 times faster** than LEM using standard PyTorch on GPUs).
 
-## Requirements
-To setup the environment, install the requirements using *python 3.7.10* with
+It's as easy to use as PyTorch's `nn.LSTM` or `nn.GRU`.
+
+Follow the steps in `LEM_cuda` directory to compile the extensions. 
+We also provide a simple example on how to use it.
+
+If you are planning on using LEM for your own project, I very much recommend to use the compiled 
+fast extension (in `LEM_cuda`)
+instead of the standard PyTorch code we provide in `src`. 
+
+## Running the experiments
+
+### Requirements
+You can install the requirements using *python 3.7* with
 ```
+conda create --name lem python=3.7
+conda activate lem
+
 pip install -r requirements.txt
 ```
 
-## Experiments
+### Experiments
 
 This repository contains the codes to reproduce the results 
 of the following experiments for the proposed LEM:
@@ -34,47 +54,15 @@ for tuning and testing Tensorflow language models.
 In order to reproduce these experiments, 
 please follow the steps explained in the *README* of the PTB directory.
 
-## Results
-The results of LEM for each of the experiments are:
-<table>
-  <tr>
-    <td> Experiment </td>
-    <td> Result </td>
-  </tr>
-  <tr>
-    <td>EigenWorms </td>
-    <td> 92.3% mean test accuracy</td>
-  </tr>
-  <tr>
-    <td>FitzHugh-Nagumo </td>
-    <td>  0.002 test L^2 loss </td>
-  </tr>
-    <tr>
-    <td>Google12 (V2)</td>
-    <td> 95.7% test accuracy </td>
-  </tr>
-  <tr>
-    <td>Heart rate prediction</td>
-    <td> 0.85 test L^2 loss </td>
-  </tr>
-  <tr>
-    <td>noisy CIFAR-10</td>
-    <td> 60.5% test accuracy  </td>
-  </tr>
-  <tr>
-    <td>Permuted Sequential MNIST</td>
-    <td> 96.6% test accuracy </td>
-  </tr>
-<tr>
-    <td>PennTree Bank char-level (single layer)</td>
-    <td> 1.25 test bits-per-character </td>
-  </tr>
-<tr>
-    <td>PennTree Bank word-level (single layer)</td>
-    <td> 72.8 test perplexity </td>
-  </tr>
-<tr>
-    <td>Sequential MNIST</td>
-    <td> 99.5% test accuracy </td>
-  </tr>
-</table>
+
+
+## Citation
+If you found our work useful, please consider citing our paper at:
+```bibtex
+@inproceedings{rusch2022lem,
+  title={Long Expressive Memory for Sequence Modeling},
+  author={Rusch, T Konstantin and Mishra, Siddhartha and Erichson, N Benjamin and Mahoney, Michael W},
+  booktitle={International Conference on Learning Representations},
+  year={2022}
+}
+```

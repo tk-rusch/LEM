@@ -16,8 +16,8 @@ It's as easy to use as PyTorch's `nn.LSTM` or `nn.GRU`.
 Follow the steps in `LEM_cuda` directory to compile the extensions. 
 We also provide a simple example on how to use it.
 
-If you are planning on using LEM for your own project, I very much recommend to use the compiled 
-fast extension (in `LEM_cuda`)
+If you are planning on using LEM for your own project, I strongly recommend to use the 
+compiled PyTorch extension (in `LEM_cuda`)
 instead of the standard PyTorch code we provide in `src`. 
 
 # Running the experiments

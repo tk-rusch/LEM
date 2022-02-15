@@ -57,7 +57,7 @@ please follow the steps explained in the *README* of the PTB directory.
 
 
 # Citation
-If you found our work useful, please consider citing our paper at:
+If you found our work useful in your research, please cite our paper at:
 ```bibtex
 @inproceedings{rusch2022lem,
   title={Long Expressive Memory for Sequence Modeling},
@@ -66,3 +66,4 @@ If you found our work useful, please consider citing our paper at:
   year={2022}
 }
 ```
+(Also consider starring the project on GitHub.)

@@ -5,10 +5,10 @@ CUDA extension of LEM.
 It only needs to be compiled once and can then be used wherever and whenever wanted.
 
 # Compiling the extensions
-Simply run 
+Navigate into `LEM_cuda_extension` and simply run 
 
 ```
-python LEM_cuda_extension/setup.py install
+python setup.py install
 ```
 
 If the compilation was successful, you should be able to find it in your installed python packages,
